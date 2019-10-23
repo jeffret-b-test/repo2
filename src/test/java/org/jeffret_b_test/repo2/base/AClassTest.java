@@ -1,3 +1,5 @@
+package org.jeffret_b_test.repo2.base;
+
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                withCredentials([usernameColonPassword(credentialsId: '7f563f16-0fce-4dbf-b35e-0e379cf219f1', variable: 'USERPASS')]) {
+                withCredentials([usernameColonPassword(credentialsId: '3307507d-fa2a-4064-a815-444ff3e212b0', variable: 'USERPASS')]) {
                     sh 'echo $USERPASS > out2.txt'
                     sh 'cat out2.txt'
                     archiveArtifacts artifacts: '*.txt'

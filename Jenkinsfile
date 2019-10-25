@@ -9,7 +9,7 @@ pipeline {
                     archiveArtifacts artifacts: '*.txt'
                     echo '${USERPASS}'
                 }
-                echo 'and now for something completely different'
+                echo 'maybe not completely different -- no trademark violation'
                 sh 'mvn clean verify'
             }
         }

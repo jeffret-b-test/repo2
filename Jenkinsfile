@@ -9,7 +9,7 @@ pipeline {
                     archiveArtifacts artifacts: '*.txt'
                     echo '${USERPASS}'
                 }
-                echo 'redo that run'
+                echo 'and now for something completely different'
                 sh 'mvn clean verify'
             }
         }

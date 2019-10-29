@@ -7,10 +7,5 @@ pipeline {
                 sh 'mvn clean verify'
             }
         }
-        stage('scm checkout') {
-            steps {
-                checkout scm
-            }
-        }
     }
 }
